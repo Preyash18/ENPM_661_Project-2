@@ -1,5 +1,6 @@
 # ENPM_661_Project-2
 Djikstra Algorithm for point and rigid robot
+
                                         ENPM661    Project 2 : - Djikstra Implementation . 
 
 
@@ -18,13 +19,7 @@ The code is to be run in Python 3
 
 
 2) User inputs :-  
-     	-Start node coordinate is predefined at (5,5).
-	-Goal node coordinate is predefined at (295,195).
-	- Coordinates of start and goal node can be changed. These can be changed as follows:-
-		- First coordinate of start node can be changed from line number 11.
-		- Second coordinate of start node can be changed from line number 12. 
-		- First coordinate of Goal node can be changed from line number 19.
-		- Second coordinate of Goal node can be changed from line number 20.
+     	- Start node and goal node coordinates are asked to enter by user.
 
 3) Point robot:- 
      	-If start node or goal node is in the obstacle the statement ("start/goal in the obstacle is mentioned"). 
@@ -33,11 +28,11 @@ The code is to be run in Python 3
 4) Rigid robot:- 
      	-Clearance of 'c' is given with the added clearance of radius of robot (r) making it total of r+c
      	-Predefined values of r and c is 2. 
-     	-You can vary value of r and c by varying values at line number at 32 and 33 respectively. 
+     	-You can vary value of r and c by varying values at line number at 30 and 31 respectively. 
      	-If values of r and c is increased, also change the starting node location from (5,5). If not,  it would be in border and program won't run.
 
 5) Time:-
-	- Total time of run (including backtracking) for "dijkstra_point.py" is 142.708 seconds.
-	- Total time of run (including backtracking) for "dijkstra_rigid.py" is 128.34480 seconds with robot radius as 2 px and clearance as 2 px.
+	- Total time of run (including backtracking) for "dijkstra_point.py" is 142.708 seconds for starting point (5,5) and goal node    	    at (295,195)
+	- Total time of run (including backtracking) for "dijkstra_rigid.py" is 128.34480 seconds with robot radius as 2 px and 		  clearance as 2 px  for starting point (5,5) and goal node at (295,195).
 
  
