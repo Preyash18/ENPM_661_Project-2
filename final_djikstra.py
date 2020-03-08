@@ -10,10 +10,9 @@ for entries in range(140000):
     blank_list.append(entries)
 initial_matrix = np.array(blank_list, dtype=object).reshape(400, 350)
 
-
 ind1 = int(input('enter x coordinate of starting node')) # 5
 ind2 = int(input('enter y coordinate of starting node')) # 5
-ind = (ind1, 200 - ind2)
+ind = (ind1, 201 - ind2)
 
 goal1 = int(input('enter x coordinate of goal node')) # 295
 goal2 = int(input('enter y coordinate of goal node')) # 195
@@ -27,8 +26,9 @@ cols = initial_matrix.shape[1]
 img_map = np.zeros([cols, rows, 3], dtype=np.uint8)
 flag = False
 
-r = 2
-c = 2
+
+r = 0
+c = 0
 cr1 = 102.54 - (r + c) * math.sqrt(1.3481)  # rectangle
 cr2 = 341 + (r + c) * math.sqrt(4.24)
 cr3 = 114.46 + (r + c) * math.sqrt(1.3481)
@@ -166,12 +166,12 @@ def obstacle_here():
 
 obstacle_here()
 
-if initial_matrix[ind[0]][ind[1]] == flag:
-    print("initial node in the obstacle")
+if  initial_matrix[ind[0]][ind[1]] == flag:
+    print(" initial node in the obstacle")
 else:
-    pass
+   pass
 
-if initial_matrix[goal[0]][goal[1]] == flag:
+if  initial_matrix[goal[0]][goal[1]] == flag:
     print("goal node in the obstacle")
 else:
     pass
